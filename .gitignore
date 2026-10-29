@@ -1,0 +1,84 @@
+# ============================================================
+#  .gitignore -- DINOv2 Wildlife Classifier (CSE471 Project)
+# ============================================================
+
+# -- Python --------------------------------------------------
+__pycache__/
+*.py[cod]
+*.class
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+wheels/
+*.whl
+site-packages/
+
+# -- Jupyter Notebooks ---------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# -- Deep Learning / Model Artifacts -------------------------
+# model.safetensors is tracked via Git LFS (see .gitattributes)
+# *.safetensors  <-- removed, handled by LFS
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# HuggingFace cache
+~/.cache/huggingface/
+.cache/
+
+# -- Dataset -------------------------------------------------
+# Dataset images are excluded (too large for GitHub ~5.5 GB)
+dataset/train/
+dataset/valid/
+dataset/test/
+dataset/
+
+# -- Logs & Outputs ------------------------------------------
+logs/
+runs/
+outputs/
+*.log
+*.out
+tensorboard/
+wandb/
+mlruns/
+
+# -- OS & IDE ------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+*.code-workspace
+
+# -- Environment Variables -----------------------------------
+.env
+.env.*
+*.env
+
+# -- Temporary / Misc ----------------------------------------
+*.tmp
+*.bak
+*.swp
+*.swo
+~$*
